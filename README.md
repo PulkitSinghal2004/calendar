@@ -1,12 +1,43 @@
-# React + Vite
+# React Calendar Component with Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A compact, user-friendly monthly calendar component built with React and Tailwind CSS.  
+It displays a monthly grid with navigation, highlights the current date, supports selecting dates,  
+and visually shows static events loaded from a JSON file. Sundays and Saturdays are color-coded  
+for better readability. Overlapping events are highlighted to indicate conflicts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Displays current month and year by default
+- Navigate to previous and next months
+- Highlights today's date
+- Sundays are shown in red; Saturdays in indigo
+- Displays static events loaded from a JSON file
+- Shows event details (title, time, duration) on the calendar dates
+- Handles overlapping/conflicting events with color coding
+- Select dates to view their events above the calendar
+- Compact and clean UI with a light theme using Tailwind CSS
+- Responsive and accessible buttons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14+ recommended)
+- npm or yarn
+- React 17+ or 18+
+- Tailwind CSS configured in your React project
+- `dayjs` installed (`npm install dayjs`)
+- `classnames` installed (`npm install classnames`)
+
+# file struture
+src/
+ ├─ components/
+ │   └─ Calendar.jsx
+ ├─ data/
+ │   └─ events.json
+ ├─ App.jsx
+ └─ index.jsx
